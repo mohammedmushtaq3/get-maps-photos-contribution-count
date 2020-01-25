@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>maps-contribution-count</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/iframe.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <h1>Google Maps Photos Contribution Count<br></h1><a href="https://www.google.com/maps/contrib/103474235754339879446/photos/@17.3689202,78.4850018,14z/data=!4m3!8m2!3m1!1e1" target="_blank">Check Local Guide Current Contribution on Map</a>
+            <p>Photos -&nbsp;<span id="photos">0</span></p>
+            <p>Views -&nbsp;<span id="views">0</span></p>
+            <h3>Check your own LocalGuide Contributions</h3>
+            <form><label>Enter&nbsp;Link<br></label><input class="form-control" type="url" id="new-link"><label>Enter&nbsp;your&nbsp;Unique&nbsp;code<br></label><input class="form-control" type="text" id="new-unicode"><button class="btn btn-primary" id="submit"
+                    type="button" style="margin: 10px;">Get Count</button></form>
+            <h3>Your Count</h3>
+            <p>Photos -&nbsp;<span id="new-photos">0</span></p>
+            <p>Views -&nbsp;<span id="new-views">0</span></p>
+            <h3>Steps&nbsp;get&nbsp;your&nbsp;own&nbsp;contirbution&nbsp;counts<br></h3>
+            <ul class="list-group">
+                <li class="list-group-item"><span>1. Go&nbsp;to&nbsp;your&nbsp;google&nbsp;map&nbsp;id&nbsp;and&nbsp;click&nbsp;on&nbsp;photos&nbsp;tab&nbsp;on&nbsp;the&nbsp;left&nbsp;panel<br></span><img src="assets/img/image-1.png"></li>
+                <li class="list-group-item"><span>2. Open Inspect Element and goto Click on Network tab. And Click on the first link which contains request url in header &nbsp;and response Text.<br></span><img src="assets/img/image-2.png"></li>
+                <li class="list-group-item"><span>3. Copy the Request url from the header tab.<br></span><img src="assets/img/image-3.png"></li>
+                <li class="list-group-item"><span>4. Click on Response Tab. and search the number of views in the response text as show in the picture below.(if the number of views is less than 3 or 4 digits then you will have to do a bit more work to do. mostly the unicode which we need is in the line no. 146.)<br></span>
+                    <img
+                        src="assets/img/image-4.png"><img src="assets/img/image-5.png"></li>
+                <li class="list-group-item"><span>5. Copy the sequence of characters which is in between the number of photos and number of view you have. that all you need.<br></span><img src="assets/img/image-6.png"></li>
+            </ul>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
