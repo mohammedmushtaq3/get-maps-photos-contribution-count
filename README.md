@@ -1,2 +1,2 @@
 # get-maps-photos-contribution-count
- Get Google maps local guide contribution count for photos and views
+Get Google Maps LocalGuide Contributions count and showcase your contribution in your websites.
